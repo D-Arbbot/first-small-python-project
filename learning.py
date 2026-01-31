@@ -16,5 +16,13 @@ while True:
             print(f'{bot_name}: The sum is {num1 + num2}')
         except ValueError:
             print(f'{bot_name}: Wrong! Use valid numbers!')
-    else:
         print(f'{bot_name}: Bro what are you even doing? Try again but make sense this time')
+
+    elif user_input in ['minus']:
+        print(f'{bot_name}: Sure lets subtract!')
+        try:
+            num1: float = float(input('First number '))
+            num2: float = float(input('Second number '))
+            print(f'{bot_name}: The answer is {num1 - num2}')
+        except ValueError:
+            print(f'{bot_name}: Wrong!')
